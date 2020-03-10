@@ -6,7 +6,6 @@ export default {
 </script>
 <style lang="postcss">
 .ce-header {
-
   &--center {
     @apply text-center;
   }

@@ -3,7 +3,7 @@ import './preview.css'
 import '../src/styles/main.css'
 
 // add nuxt-link mockup
-Vue.component('NavLink', {
+const LinkMockup = {
   functional: true,
   render(h, ctx) {
     return h('a', {
@@ -14,4 +14,6 @@ Vue.component('NavLink', {
       }
     }, ctx.children)
   }
-})
+}
+Vue.component('NavLink', LinkMockup)
+Vue.component('NuxtLink', LinkMockup)

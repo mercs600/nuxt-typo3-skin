@@ -36,6 +36,12 @@ export default {
   }
 
   &--vertical-intext:not(&--no-wrap) {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     &.ce-gallery--horizontal-right .ce-gallery__container {
       @apply float-right ml-6;
     }

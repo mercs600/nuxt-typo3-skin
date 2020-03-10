@@ -13,6 +13,7 @@ module.exports = {
       '6xl': '4rem'
     },
     colors: {
+      body: '#333',
       white: '#fff',
       primary: '#ff8700',
       secondary: '#34495e',

@@ -5,6 +5,7 @@ export default {
 }
 </script>
 <style lang="postcss">
+/* purgecss start ignore */
 .ce-header {
   &--center {
     @apply text-center;
@@ -18,4 +19,5 @@ export default {
     @apply text-right;
   }
 }
+/* purgecss end ignore */
 </style>

@@ -16,6 +16,7 @@ export default {
 }
 </script>
 <style lang="postcss">
+/* purgecss start ignore */
 @import '../../../styles/core/layout.css';
 
 .frame-default {
@@ -72,4 +73,5 @@ export default {
     }
   }
 }
+/* purgecss end ignore */
 </style>

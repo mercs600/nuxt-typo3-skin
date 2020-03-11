@@ -1,5 +1,6 @@
+/* purgecss start ignore */
 @import './core/reset.css';
 @import './core/typography.css';
 @import './core/layout.css';
-
+/* purgecss end ignore */
 @tailwind utilities;

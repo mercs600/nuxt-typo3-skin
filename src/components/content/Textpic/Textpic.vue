@@ -5,6 +5,7 @@ export default {
 }
 </script>
 <style lang="postcss">
+/* purgecss start ignore */
 .ce-gallery {
 
   &:not(&--vertical-intext) {
@@ -73,4 +74,5 @@ export default {
 
   &--no-wrap {}
 }
+/* purgecss end ignore */
 </style>

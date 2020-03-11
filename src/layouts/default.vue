@@ -1,34 +1,3 @@
-# nuxt-typo3-skin
-
-Proof of concept additional theming for [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3)
-
-## Features
-+ Storybook
-+ Tailwind.css 
-+ Postcss 
-+ Ready to use as nuxt module
-
-## Theme installation
-in your nuxt-typo3 project
-
-```
-yarn add nuxt-typo3-skin
-```
-
-`nuxt.config.js`:
-```js
-...
-modules: [
-    'nuxt-typo3-skin',
-    // Doc: https://github.com/TYPO3-Initiatives/nuxt-typo3
-    'nuxt-typo3'
-],
-...
-```
-
-And use our [layouts/default.vue]('/src/layouts/default.vue)
-
-```html
 <template>
   <div class="wrapper">
     <header-main>
@@ -85,11 +54,10 @@ export default {
   computed: {
     ...mapState({
       navMain: (state) => state.typo3.initial.navigation[0] || [], // get first instance from root tree,
-      breadcrumbs: (state) => state.typo3.page.page.breadcrumbs || [], // get breadcrumbs for current page,
+      breadcrumbs: (state) => state.typo3.page.page ? state.typo3.page.page.breadcrumbs : [], // get breadcrumbs for current page,
       currentLanguage: (state) => state.typo3.locale,
       availableLanguages: (state) => state.typo3.page.languages
     })
   }
 }
 </script>
-```

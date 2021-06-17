@@ -20,7 +20,7 @@ export default {
 @import '../../../styles/core/layout.css';
 
 .frame-default {
-  @apply .container pb-6 pt-6;
+  @apply container pb-6 pt-6;
 }
 
 .frame-indent {
